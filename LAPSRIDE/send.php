@@ -76,7 +76,7 @@ if (isset($_POST['submit'])) {
            <div class="ride_text successfull h1">
                <?php
                if (($conn->query($sql3) === TRUE)) { ?>
-                   <p class="h4" id="info"><?php echo "Message Sent Sucessfully !\n"; ?></p>
+                   <p class="h4" style="color:red;" id="info"><?php echo "Message Sent Sucessfully !\n"; ?></p>
                    <?php
                } else { ?>
                    <p id="info"><?php echo "Message Sent Unsucessfully ! Please Try again \n"; ?></p>
@@ -91,49 +91,47 @@ if (isset($_POST['submit'])) {
    
        </div>
    
-    <!-- section footer start -->
-   
-         <div class="section_footer fixed-bottom">
-               <div class="container"> 
-                 
-                     <div class="row">
-                         
-                         <div class="col-sm-6 col-md-4">
-                           <h2 class="account_text">Links</h2>
-                           <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">Home</span></a></div>
-                         <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#about">About</span></a></div>
-                         
-                         <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#booking">Booking</span></a></div>
-                         <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">Contact Us</span></a></div>
-                         </div>
-                         <div class="col-sm-6 col-md-4">
-                         <h2 class="account_text">Follow Us</h2>
-                         <div class="image-ico"> <img src="./images/icons8-whatsapp.svg"/> <span class="fb_text wp-text"><a href="https://wa.me/message/DELOPBK7IEYDL1">Whatsapp</a></span></div>
-                         <div class="image-icon"><img src="images/fb-icon.png"><span class="fb_text"><a href="#">Facebook</a></span></div>
-                         <div class="image-icon"><img src="images/twitter-icon.png"><span class="fb_text"><a href="#">Twitter</a></span></div>
-                         <!-- <div class="image-icon"><img src="images/in-icon.png"><span class="fb_text"><a href="#">Linkedin</a></span></div> -->
-                         <!-- <div class="image-icon"><img src="images/youtube-icon.png"><span class="fb_text"><a href="#">Youtube</a></span></div>             -->
-                         
-                         <div class="image-icon"><img src="images/instagram-icon.png"><span class="fb_text"><a href="#">Instagram</a></span></div>
-                       
-                       </div>
-                       <div class="col-sm-6 col-md-4">
-                         <h2 class="account_text">Scan to Book a Ride</h2>
-                         <div class="w-50"><img src="images/scanqrcode.jpg"></div>
-                       </div>
-                     </div>
-                  
-                   </div>
-               </div>
-            
-   
-         <!-- copyright section start
-         <div class="copyright_section">
-           <div class="container">
-             <p class="copyright"> EASY, AFFORDABLE AND COMFORTABLE RIDE @2021 All Rights Reserved. <a href="#">LIFEOFRENCE</a></p>
-           </div>
-         </div> -->
-   
+    
+ <!-- section footer start -->
+
+ <div class="section_footer fixed-bottom">
+            <div class="container"> 
+            <p class="copyright" > EASY, AFFORDABLE AND COMFORTABLE RIDE @2021 <a href="#" style="color:red;"><strong> LAPSRIDE </strong></a> All Rights Reserved. </p>
+                  <!-- <div class="row">
+                      
+                      <div class="col-sm-6 col-md-4">
+                        <h2 class="account_text">Links</h2>
+                        <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="index.php">Home</span></a></div>
+                      <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="index.php">About</span></a></div>
+                      
+                      <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="index.php">Booking</span></a></div>
+                      <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="index.php">Contact Us</span></a></div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                      <h2 class="account_text">Follow Us</h2>
+                      <div class="image-ico"> <img src="./images/icons8-whatsapp.svg"/> <span class="fb_text wp-text"><a href="https://wa.me/message/DELOPBK7IEYDL1">Whatsapp</a></span></div>
+                      <div class="image-icon"><img src="images/fb-icon.png"><span class="fb_text"><a href="#">Facebook</a></span></div>
+                      <div class="image-icon"><img src="images/twitter-icon.png"><span class="fb_text"><a href="#">Twitter</a></span></div>
+                      <!-- <div class="image-icon"><img src="images/in-icon.png"><span class="fb_text"><a href="#">Linkedin</a></span></div> -->
+                      <!-- <div class="image-icon"><img src="images/youtube-icon.png"><span class="fb_text"><a href="#">Youtube</a></span></div>             -->
+                      
+                      <!-- <div class="image-icon"><img src="images/instagram-icon.png"><span class="fb_text"><a href="#">Instagram</a></span></div>
+                    
+                    </div>
+                   
+                  </div> -->
+               
+                </div>
+            </div>
+         
+
+      <!-- copyright section start
+      <div class="copyright_section">
+        <div class="container">
+          <p class="copyright"> EASY, AFFORDABLE AND COMFORTABLE RIDE @2021 All Rights Reserved. <a href="#">LIFEOFRENCE</a></p>
+        </div>
+      </div> -->
+
        <!-- Javascript files-->
        <script src="js/jquery.min.js"></script>
        <script src="js/popper.min.js"></script>

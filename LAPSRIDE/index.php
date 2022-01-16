@@ -13,7 +13,7 @@ include "connection.php";
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 <!-- site metas -->
-<title>LAPS</title>
+<title>LAPSRIDE</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">	
@@ -35,6 +35,10 @@ include "connection.php";
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 
+
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">		
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 </head>
 <body>
 	<!--header section start -->
@@ -76,24 +80,24 @@ include "connection.php";
     <div class="banner_section" id="booking" >
       <div class="container-fluid">
       <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6"> 
             <div class="book_now">
               <h1 class="book_text">BOOK NOW</h1>
               <a class="call_text" href="tel:09023250180">+234 902 3250 180 </a>
               <!-- <h1 class="call_text">(+234) 8095193865</h1> -->
             </div>
            
-            <div class="image_1 "> <img src="./images/carpana.svg"> </div>
+            <div class="image_1 "> <img src="./images/bg.jpg"> </div>
           </div>
           <div class="col-md-6">
-          <div class="request_text"> <marquee bgcolor="#e1e1e1"behavior="scroll" direction="left" scrollamount="10"> The available locations for now is Kubwa,
+          <!-- <div class="request_text"> <marquee bgcolor="#e1e1e1"behavior="scroll" direction="left" scrollamount="10"> The available locations for now is Kubwa,
                         Gwarimpa,
                         Jahi, Life- Camp,
                         Wuse, Garki,
                         Maitama,
                         Asokoro,  
                         Lokogoma & Apo  </marquee> 
-                      </div> 
+                      </div>  -->
             <h1 class="booking_text">Book a Ride to your destination</h1>
             <div class="contact_bg">
             <div class="input_main">
@@ -128,19 +132,31 @@ include "connection.php";
                         </select>
                         <div class="d-none email-bt form-select form-select-lg mb-3 nice-select" tabindex="0"><span class="current">Open this select menu</span><ul class="list"><li class="option selected" data-value="Open this select menu">Open this select menu</li><li class="option " data-value="1">One</li><li class="option " data-value="2">Two</li><li class="option " data-value="3">Three</li></ul></div>
                       </div> 
-
+<!-- 
                       <div class="form-group input-group mb-3">
                       <input type="date" class="email-bt" id="date" name="date">
-                      </div>
-                      <div class="form-group">
+                      </div> -->
+                          <!-- <div id="datepicker" class="md-form md-outline input-with-post-icon datepicker" inline="true">
+                          <input placeholder="Select date" type="text" id="example" class="form-control">
+                          <label for="example">Try me...</label>
+                          <i class="fas fa-calendar input-prefix"></i>
+                        </div> -->
+
+                <div class="form-group">
+                    
+                    <input type="text" id="date" class="email-bt" placeholder="Select Date" name="date" required />                 
+                </div>             
+          
+                                              
+                        <div class="form-group">
                         <input type="text" class="email-bt" placeholder="Phone Number (whatsapp)" name="phone" required />
                       </div>
                       <div class="form-group">
                         <input type="text" class="email-bt" placeholder="Email Address" name="email" required />
                       </div>
                       
-                     <button class="book_bt" type="submit"> BOOK </button>
-                  
+                     <button class="btn btn-danger float-right mr-4"  type="submit"> BOOK </button>
+                     
                     </form>
                 
              
@@ -222,10 +238,10 @@ include "connection.php";
               <!-- Contact Form -->
               <form method="post" action="send.php" >
                   <div class="form-group mt-5"> 
-                      <input type="text" class="email-bt" name="fullName" id="FN" placeholder="Full name"/>
+                      <input type="text" class="email-bt" name="fullName" id="FN" placeholder="Full name" required />
                   </div>
                   <div class="form-group">
-                  <input type="text" class="email-bt" id="EMAIL" name="email" placeholder="Email adress"/>
+                  <input type="text" class="email-bt" id="EMAIL" name="email" placeholder="Email adress" required />
                   </div>
                   <div class="form-group">
                       <textarea class="form-control-textarea email-bt" id="cmessage" name="message" required="" placeholder="Your message"></textarea>
@@ -233,8 +249,8 @@ include "connection.php";
                       <div class="help-block with-errors"></div>
                   </div>
                 
-                  <div class=form-botten>
-                  <input class="book_bt" type="submit" value="send"/>
+                  <div >
+                  <button class="btn btn-danger float-right mr-4"  type="submit"> SEND </button>
                      <!-- <div class="send_bt"><a class="send_bt" href="#">Send</a></div>  -->
                   </div>
                   </div>
@@ -316,7 +332,7 @@ include "connection.php";
   <!-- copyright section start -->
   <div class="copyright_section">
     <div class="container">
-      <p class="copyright">  EASY, AFFORDABLE AND COMFORTABLE RIDE @2021 <a href="www.staunchgrin"> <strong>STAUNCHGRIN</strong></a> All Rights Reserved.   <strong>Version 1.0</strong></p> 
+      <p class="copyright">  EASY, AFFORDABLE AND COMFORTABLE RIDE @2021 <a href="www.staunchgrin"> <strong>LAPSRIDE</strong></a> All Rights Reserved.   </p> 
  
     </div>
   </div>
@@ -333,6 +349,8 @@ include "connection.php";
     <!-- javascript --> 
     <script src="js/owl.carousel.js"></script>
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+    
     <script>
     $(document).ready(function(){
     $(".fancybox").fancybox({
@@ -358,5 +376,16 @@ include "connection.php";
    document.getElementById("myNav").style.width = "0%";
    }
 </script>   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>      	
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>      	
+        <script>
+            $(document).ready(function () {
+                $('#date').datepicker({
+                    autoclose: true,
+                    format: "dd/mm/yyyy"
+                });
+            });
+        </script>      
 </body>
 </html>

@@ -20,6 +20,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">	
+<meta http-equiv="Refresh" content="3; url =./index.php"/>
 <!-- <meta http-equiv="Refresh" content="2; url =./index.php"/> -->
 <!-- bootstrap css -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -84,8 +85,8 @@ $date = mysqli_real_escape_string($conn, $_POST["date"]);
 $phone = mysqli_real_escape_string($conn, $_POST["phone"]);
 $email = mysqli_real_escape_string($conn, $_POST["email"]);
 
-$sql3 = "INSERT INTO bookride VALUES(
-  NULL,
+$sql3 = "INSERT INTO bookride (pickup, destination, name, time, date, phone, email ) VALUES(
+
   '$pickup',
   '$destination',
   '$name',
@@ -114,12 +115,12 @@ $sql3 = "INSERT INTO bookride VALUES(
         <div class="ride_text successfull h1">
             <?php
             if (($conn->query($sql3) === TRUE)) { ?>
-                <p class="h4" id="info"><?php echo "Ride Booked Sucessfully !\n"; ?></p>
+                <p class="h4" style="color:red;" id="info"><?php echo "Ride Booked Sucessfully !\n"; ?></p>
                 
                 <?php
             } else { ?>
                 <p id="info"><?php echo "Ride Book Unsucessfully ! Please Try again \n"; ?></p>
-               <p><?php> echo "Error: " . $sql3 . "<br>" . $conn->error . "<br>"; ?></p>
+              
             <?php } ?>
         </div>
 
@@ -133,8 +134,8 @@ $sql3 = "INSERT INTO bookride VALUES(
 
       <div class="section_footer fixed-bottom">
             <div class="container"> 
-              
-                  <div class="row">
+            <p class="copyright" > EASY, AFFORDABLE AND COMFORTABLE RIDE @2021 <a href="#" style="color:red;"><strong> LAPSRIDE </strong></a> All Rights Reserved. </p>
+                  <!-- <div class="row">
                       
                       <div class="col-sm-6 col-md-4">
                         <h2 class="account_text">Links</h2>
@@ -152,14 +153,11 @@ $sql3 = "INSERT INTO bookride VALUES(
                       <!-- <div class="image-icon"><img src="images/in-icon.png"><span class="fb_text"><a href="#">Linkedin</a></span></div> -->
                       <!-- <div class="image-icon"><img src="images/youtube-icon.png"><span class="fb_text"><a href="#">Youtube</a></span></div>             -->
                       
-                      <div class="image-icon"><img src="images/instagram-icon.png"><span class="fb_text"><a href="#">Instagram</a></span></div>
+                      <!-- <div class="image-icon"><img src="images/instagram-icon.png"><span class="fb_text"><a href="#">Instagram</a></span></div>
                     
                     </div>
-                    <div class="col-sm-6 col-md-4">
-                      <h2 class="account_text">Scan to Book a Ride</h2>
-                      <div class="w-50"><img src="images/scanqrcode.jpg"></div>
-                    </div>
-                  </div>
+                   
+                  </div> -->
                
                 </div>
             </div>

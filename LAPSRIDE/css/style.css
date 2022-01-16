@@ -334,8 +334,12 @@ button {
 .image_1 {
     width: 80%;
     float: right;
-    margin-top: 50px;
+    
+    margin-top: 15px;
+    margin-right: 38px;
+    margin-bottom: 15px;
 }
+
 
 .booking_text{
      width: 100%;
@@ -357,10 +361,10 @@ button {
 .request_text {
     width: 100%;
     float: left;
-    font-size: 10px;
+    font-size: 30px;
     color: #000;
     border-bottom: 0px solid#49bcfe;
-    padding-top: 10PX;
+    padding-top: 20PX;
     text-align: center;
 }
 
@@ -382,9 +386,6 @@ button {
 }
 .email-bt select{
     color: red;
-}
-.form-group{
-margin-top: 15px important;
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::: CONTACT US ::::::::::::::::::::::::::::::::::::::::::::::::::::*/
@@ -458,7 +459,7 @@ margin-top: 15px important;
 }
 
 /* end contact us  */
-.send_bt a{
+.send_bt{
     width: 25%;
     float: right;
     background-color: #353433;
@@ -469,27 +470,16 @@ margin-top: 15px important;
     border-radius: 10px;
     margin-right: 30px;
 }
-.book_bt {
-    width: 25%;
-    float: right;
+
+.button.send_bt{ color: #fefefe; }
+.button.send_bt:hover {
+    color: #000;
+    background: red  ;
+}
+.book_bt{
+
     background-color: #353433;
     color: #fefefe;
-    text-align: center;
-    padding: 12px 0px;
-    font-size: 18px;
-    border-radius: 10px;
-    margin-right: 30px;
-}
-.book_bt :hover {
-    color: #000;
-    background: red  ;
-}
-
-
-.send_bt a{ color: #fefefe; }
-.send_bt a:hover {
-    color: #000;
-    background: red  ;
 }
 
 .taxis_section {
@@ -686,11 +676,6 @@ input.email-bt::placeholder {
     padding-left: 53px;
 }
 
-
-.successfull{
-    margin-top: -10px
-}
-
 .image_7 {
     width: 90%;
     float: left;
@@ -791,9 +776,7 @@ input.email-bt::placeholder {
     text-align: center;
     margin-left: 0;
 }
-.lastpara{
-    text-align-last: right;
-}
+
 .copyright a{ color: #000; }
 .copyright a:hover{ color: #fecf3d; }
 

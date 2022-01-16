@@ -1,0 +1,5 @@
+[12-Jan-2022 09:43:29 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/tinysnot/public_html/lapsride/admin/connection.php on line 8
+[12-Jan-2022 09:47:42 UTC] PHP Warning:  include(connect.php): failed to open stream: No such file or directory in /home/tinysnot/public_html/lapsride/admin/logout_action.php on line 2
+[12-Jan-2022 09:47:42 UTC] PHP Warning:  include(): Failed opening 'connect.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/tinysnot/public_html/lapsride/admin/logout_action.php on line 2
+[12-Jan-2022 11:28:50 UTC] PHP Notice:  Undefined index: admin_uname in /home/tinysnot/public_html/lapsride/admin/admin_login_action.php on line 9
+[12-Jan-2022 11:28:50 UTC] PHP Notice:  Undefined index: admin_psw in /home/tinysnot/public_html/lapsride/admin/admin_login_action.php on line 10
